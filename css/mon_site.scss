@@ -1,2 +1,18 @@
 @import 'menu';
 @import 'layout';
+
+.photo_titre img{
+  width:100%;
+}
+
+
+.textcenter {
+  text-align: center;
+}
+
+.menu_icones {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

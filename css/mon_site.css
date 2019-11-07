@@ -1,4 +1,21 @@
-.photo_titre img{
-  width:100%;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
+.photo_titre img {
+  width: 100%;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.menu_icones {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=mon_site.css.map */
