@@ -5,6 +5,7 @@
 
 .photo_titre img {
   width: 100%;
+  position: relative;
 }
 
 .textcenter {
@@ -16,6 +17,12 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.titre_description {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 /*# sourceMappingURL=mon_site.css.map */
