@@ -22,14 +22,6 @@
       justify-content: center;
 }
 
-.line_block {
-  display: inline-block;
-}
-
-.bg_grey {
-  background-color: #f6fefe;
-}
-
 .icone {
   margin: 0 auto;
   text-align: center;
@@ -37,6 +29,15 @@
 
 .icone img {
   border-radius: 50%;
+  width: 50%;
+}
+
+.line_block {
+  display: inline-block;
+}
+
+.bg_grey {
+  background-color: #f6fefe;
 }
 
 .top_inner {
@@ -55,10 +56,39 @@ button {
   padding: 5px;
 }
 
+@media screen and (min-width: 466px) {
+  .menu_icones :nth-child(1) {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .menu_icones :nth-child(2) {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .menu_icones :nth-child(3) {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+}
+
 @media screen and (min-width: 668px) {
-  .gym {
-    -ms-flex-order: -1;
-        order: -1;
+  .inner {
+    margin: 0 auto;
+  }
+  .menu-icones {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .inner {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .menu-icones {
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
 }
 
