@@ -16,13 +16,50 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-.titre_description {
+.line_block {
+  display: inline-block;
+}
+
+.bg_grey {
+  background-color: #f6fefe;
+}
+
+.icone {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icone img {
+  border-radius: 50%;
+}
+
+.top_inner {
+  position: relative;
+}
+
+button {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #f6fefe;
+  color: black;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+@media screen and (min-width: 668px) {
+  .gym {
+    -ms-flex-order: -1;
+        order: -1;
+  }
 }
 
 /*# sourceMappingURL=mon_site.css.map */
