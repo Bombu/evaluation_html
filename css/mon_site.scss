@@ -1,18 +1,92 @@
 @import 'menu';
 @import 'layout';
+@import 'reset';
 
-$bp466: 466px;
-$bp668: 668px;
+$bp480: 480px;
+$bp768: 768px;
 
+@font-face {
+  font-family: BernitaSans;
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2");
+}
 
-.photo_titre img {
-  width: 100%;
-  position: relative;
+@font-face {
+  font-family: GothamHTF;
+  src: url("../fonts/GothamHTFMedium2.woff2");
 }
 
 
+*{
+  font-family: BerninaSans, sans-serif;
+}
+
+.img_titre {
+  background-image: url("../img/background.jpg");
+  width:100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.phrase_titre{
+  position: relative;
+  color: white;
+  background-color: transparentize(white, 0.4);
+  top: 500px;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.phrase_titre h2{
+  font-size:0.9em;
+}
+.phrase_titre h4{
+  font-size:0.7em;
+}
+
+.promo{
+  position: absolute;
+  color: white;
+  background-color: darken(#9c1414,10%);
+  top:100px;
+  right:25px;
+  width:250px;
+  height: 100px;
+  border-radius:8px;
+  padding: 5px;
+  transform: rotate(25deg);
+}
+
+.promo h2{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.inner{
+  padding:5px;
+}
+
+.top_inner{
+  margin-bottom: 20px;
+}
+
 .textcenter {
   text-align: center;
+  color: #00465b;
+}
+
+.titre_description{
+  color: #00465b;
+  margin-bottom: 50px;
+}
+
+.description{
+  color: #00465b;
+  margin-bottom: 30px;
+}
+
+.ice_experience{
+  color: #00465b;
 }
 
 .menu_icones {
@@ -25,6 +99,11 @@ $bp668: 668px;
 .icone{
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+}
+
+.gotham{
+  font-family: GothamHTF, sans-serif;
 }
 
 .icone img{
@@ -40,9 +119,6 @@ $bp668: 668px;
   background-color: #f6fefe;
 }
 
-
-
-
 .top_inner{
   position: relative;
 }
@@ -53,12 +129,12 @@ button{
   right: 0px;
   transform: translateY(-50%);
   background-color: #f6fefe;
-  color: black;
   border: 1px solid grey;
   padding : 5px;
+  border-radius:5px;
 }
 
-@media screen and (min-width: $bp466){
+@media screen and (min-width: $bp480){
   .menu_icones :nth-child(1){
     order:2;
   }
@@ -70,7 +146,7 @@ button{
   }
 }
 
-@media screen and (min-width: $bp668){
+@media screen and (min-width: $bp768){
   .inner{
     margin: 0 auto;
   }
